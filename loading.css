@@ -1,4 +1,4 @@
-/* style.css */
+
 
 /* Center the canvas in the middle of the page */
 body, html {
@@ -8,9 +8,9 @@ body, html {
     height: 100vh;
     margin: 0;
     background-image: url('img.jpg'); 
-    background-size: cover; /* Ensures the image covers the whole screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 /* Loading Text */

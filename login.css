@@ -5,9 +5,9 @@ body, html {
     height: 100vh;
     margin: 0;
     background-image: url('login.jpg'); 
-    background-size: cover; /* Ensures the image covers the whole screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .login-container {
@@ -15,12 +15,12 @@ body, html {
     padding: 40px;
     border-radius: 9px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 400px; /* Limits the width of the container */
-    width: 90%; /* Responsive width */
-    display: flex;               /* Make the container a flex container */
-    justify-content: center;     /* Center horizontally */
-    align-items: center;         /* Center vertically */
-    height: 60vh;              /* Optional: Set height to fill the viewport */
+    max-width: 400px; 
+    width: 90%; 
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    height: 60vh;              
 }
 
 .login-form {
@@ -67,7 +67,7 @@ input[type="password"] {
 
 button {
     padding: 10px;
-    background-color: #6f4caf; /* Green background */
+    background-color: #6f4caf; 
     color: white; /* White text */
     border: none; /* No border */
     border-radius: 4px;
@@ -75,11 +75,11 @@ button {
 }
 
 button:hover {
-    background-color: #bc0fec; /* Darker green on hover */
+    background-color: #bc0fec; 
 }
 
 h2{
-    color: #ffff; /* Bright cyan color */
+    color: #ffff; 
     font-size: 3em;
     font-family: 'Orbitron', sans-serif; /* Futuristic font */
     text-transform: uppercase; /* Uppercase for extra impact */

@@ -5,9 +5,9 @@ body, html {
     height: 100vh;
     margin: 0;
     background-image: url('home2.jpg'); 
-    background-size: cover; /* Ensures the image covers the whole screen */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-color: black;
 }
 
@@ -26,8 +26,8 @@ body, html {
 }
 
 .logo img.logo-image {
-    height: 50px; /* Adjust height as needed */
-    width: auto;  /* Maintains the aspect ratio */
+    height: 50px; 
+    width: auto;  
     display: block;
 }
 .nav-menu {
@@ -50,13 +50,13 @@ body, html {
 
 .nav-menu li a:hover {
     color: #FF5E00
-    ; /* Color change on hover */
+    ; /
 }
 
 /* Centered Home Text */
 .home-text {
     position: absolute;
-    top: 20%; /* Adjust to position lower than the navbar */
+    top: 20%; 
     left: 5%;
     right: 5%;
     transform: translateX(-50%);
