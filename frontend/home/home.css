@@ -16,7 +16,7 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding:0 20px;
     background-color: rgba(0, 0, 0, 0); /* Dark translucent background */
     width: 100%;
     position: fixed;
@@ -25,16 +25,18 @@ body, html {
     z-index: 10;
 }
 
-.logo {
-    font-family: 'Orbitron', sans-serif; /* Match futuristic font */
-    font-size: 1.5em;
-    color: #9b59b6; /* Bright purple color */
+.logo img.logo-image {
+    height: 50px; /* Adjust height as needed */
+    width: auto;  /* Maintains the aspect ratio */
+    display: block;
 }
-
 .nav-menu {
     display: flex;
     list-style: none;
     gap: 20px;
+    margin: 20px;
+    padding: 20px;
+   
 }
 
 .nav-menu li a {
@@ -43,6 +45,7 @@ body, html {
     font-size: 1em;
     font-family: 'Orbitron', sans-serif;
     transition: color 0.3s;
+    
 }
 
 .nav-menu li a:hover {
@@ -83,3 +86,58 @@ body, html {
         transform: scale(1.1);
     }
 }
+
+/* Floating button styles */
+.time-button {
+    position: fixed;
+    bottom: 80px;
+    width: 150px;
+    height: 60px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 25px;
+}
+
+.time-button:hover {
+    transform: scale(1.1);
+}
+
+/* Future button styling */
+.future {
+    right: 80px;
+    background-color: #007bff; /* Bright blue */
+    box-shadow: 
+        0 0 10px rgba(0, 123, 255, 0.8),
+        0 0 20px rgba(0, 123, 255, 0.8),
+        0 0 30px rgba(0, 123, 255, 0.8);
+}
+
+/* Past button styling */
+.past {
+    left: 80px;
+    background-color: #ff6700; /* Bright orange */
+    box-shadow: 
+        0 0 10px rgba(255, 103, 0, 0.8),
+        0 0 20px rgba(255, 103, 0, 0.8),
+        0 0 30px rgba(255, 103, 0, 0.8);
+}
+
+/* Optional: Adjust neon intensity on hover */
+.future:hover {
+    box-shadow: 
+        0 0 15px rgba(0, 123, 255, 1),
+        0 0 25px rgba(0, 123, 255, 1),
+        0 0 35px rgba(0, 123, 255, 1);
+}
+
+.past:hover {
+    box-shadow: 
+        0 0 15px rgba(255, 103, 0, 1),
+        0 0 25px rgba(255, 103, 0, 1),
+        0 0 35px rgba(255, 103, 0, 1);
+}
+

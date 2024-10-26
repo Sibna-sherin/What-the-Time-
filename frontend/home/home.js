@@ -1,5 +1,11 @@
-// script.js
-function toggleMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('active'); // Toggles the "active" class
-}
+
+    
+        function goToFuture() {
+            alert("Navigating to the future...");
+            // Additional future navigation logic
+        }
+
+        function goToPast() {
+            alert("Navigating to the past...");
+            // Additional past navigation logic
+        }

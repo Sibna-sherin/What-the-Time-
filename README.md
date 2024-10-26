@@ -1,25 +1,31 @@
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# WhatTheTime! 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Sibna Sherin
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead:Sibna Sherin T -EMEA college of Arts and Science ,kondotty
 
 ### Project Description
-[2-3 lines about what your project does]
+A system that allows you to time travel!
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+We as humans are always curious about what is gonna happen. But we have no way but wait for the future to happen.And also we wish to change or revisit our past all the time ,which is also impossible.Not anymore!
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+My project is a system that helps you time travel.
+It's called "WhatTheTime!".
+It has features that takes you to your future according to yoir current conditions.
+
+And you can see any day from your past with the right description.
+
+You can even relive yoir core memory.
+
+It would (maybe in the future) also have  the feature to edit your past... Let's see
 
 ## Technical Details
 ### Technologies/Components Used
