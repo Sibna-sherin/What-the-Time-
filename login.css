@@ -11,12 +11,16 @@ body, html {
 }
 
 .login-container {
-    background: rgba(179, 215, 230, 0); /* White background with transparency */
-    padding: 20px;
-    border-radius: 8px;
+    background: rgba(179, 215, 230, 0); 
+    padding: 40px;
+    border-radius: 9px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     max-width: 400px; /* Limits the width of the container */
     width: 90%; /* Responsive width */
+    display: flex;               /* Make the container a flex container */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+    height: 60vh;              /* Optional: Set height to fill the viewport */
 }
 
 .login-form {
@@ -24,8 +28,29 @@ body, html {
     flex-direction: column; /* Stack form elements vertically */
 }
 
+/* styles.css */
 .form-group {
-    margin-bottom: 20px; /* Space between form elements */
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove outline */
 }
 
 label {
@@ -67,6 +92,7 @@ h2{
     0 0 50px rgba(155, 89, 182, 0.7),
     0 0 60px rgba(155, 89, 182, 0.7),
     0 0 70px rgba(155, 89, 182, 0.7);
+    position: relative;
 
     animation: pulse 1.5s infinite alternate; /* Pulsing effect */
 }
