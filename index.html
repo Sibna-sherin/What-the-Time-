@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Travel App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="login.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            overflow: hidden; /* Prevents scrollbars */
+        }
+        
+        /* Home page styles */
+        #home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('home2.jpg'); /* Home page background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        /* Loading page styles */
+        #loading {
+            display: none; /* Initially hidden */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('img.jpg'); /* Loading page background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        /* Login page styles */
+        #login {
+            display: none; /* Initially hidden */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('login.jpg'); /* Login page background */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Additional styling for text and buttons */
+        .home-text {
+            color: white;
+            font-size: 3em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .time-button {
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for buttons */
+            color: #000;
+            border: none;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .time-button:hover {
+            background-color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-menu li {
+            margin: 0 15px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .nav-menu a:hover {
+            text-decoration: underline;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for login form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF; /* Bootstrap primary color */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="home" class="page">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Logo White.png" alt="My Logo" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('login')">Login</a></li>
+                <li><a href="#" onclick="showPage('loading')">Loading</a></li>
+            </ul>
+        </nav>
+        <div class="home-text">Where in Time Do You Want to Go...?</div>
+        <button class="time-button future" onclick="goToFuture()">Future</button>
+        <button class="time-button past" onclick="goToPast()">Past</button>
+    </div>
+
+    <div id="loading" class="page">
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <div id="login" class="page">
+        <div class="login-container">
+            <form class="login-form" action="#" method="POST">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.display = 'none'; // Hide all pages
+            });
+            document.getElementById(pageId).style.display = 'flex'; // Show selected page
+        }
+
+        function goToFuture() {
+            // Future navigation logic
+            showPage('loading'); // Show loading page first
+            setTimeout(() => {
+                alert('Navigating to the Future...'); // Simulate future navigation
+                showPage('home'); // Return to home after delay
+            }, 2000);
+        }
+
+        function goToPast() {
+            // Past navigation logic
+            showPage('loading'); // Show loading page first
+            setTimeout(() => {
+                alert('Navigating to the Past...'); // Simulate past navigation
+                showPage('home'); // Return to home after delay
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

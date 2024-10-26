@@ -6,7 +6,6 @@
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href="home.css" rel="stylesheet">
-    
 </head>
 <body>
     <nav class="navbar">
@@ -21,12 +20,19 @@
     </nav>
     
     <div class="home-text">Where in Time Do You Want to Go...?</div> 
-   
-     <!-- Floating buttons for navigation -->
-     <button class="time-button future" onclick="goToFuture()">Future</button>
-     <button class="time-button past" onclick="goToPast()">Past</button>
- 
+    <button class="time-button future" onclick="goToFuture()">Future</button>
+    <button class="time-button past" onclick="goToPast()">Past</button>
 
+    <script>
+        function goToFuture() {
+            alert('Navigating to the Future...');
+            // Future navigation logic can be implemented here
+        }
 
+        function goToPast() {
+            alert('Navigating to the Past...');
+            // Past navigation logic can be implemented here
+        }
+    </script>
 </body>
 </html>
