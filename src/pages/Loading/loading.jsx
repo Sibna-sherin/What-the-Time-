@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import './login.css';
+import './loading.css';
 
-const Login = () => {
+const Loading = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js";
@@ -9,7 +9,7 @@ const Login = () => {
     document.body.appendChild(script);
 
     const animationScript = document.createElement('script');
-    animationScript.src = "C:\Users\sibna\What-the-Time-\public\loading-animation.js"; // Adjust path
+    animationScript.src = "/loading-animation.js"; // Adjust path
     animationScript.async = true;
     document.body.appendChild(animationScript);
 
@@ -20,11 +20,8 @@ const Login = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Login to the Time Machine</h2>
-      {/* Form for login (could be added here) */}
-    </div>
+    <div className="loading-text">Loading...</div>
   );
 };
 
-export default Login;
+export default Loading;

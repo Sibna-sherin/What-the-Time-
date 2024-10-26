@@ -1,4 +1,4 @@
-function setup() {
+~function setup() {
     createCanvas(windowWidth, windowHeight); // Create canvas to fit the screen
     noFill(); // No fill for shapes
     strokeWeight(1); // Thickness of the shape lines
